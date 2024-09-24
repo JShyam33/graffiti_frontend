@@ -1,0 +1,59 @@
+/* App.css */
+
+/* Remove any scroll caused by the body or html */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Make the canvas take up the entire viewport */
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Toolbar floating on top of the canvas */
+.toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1; /* Ensure toolbar is on top */
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Styling for the buttons */
+.btn, .color-btn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.color-btn {
+  background-color: lightgray;
+  border-radius: 3px;
+}
+
+.done-btn {
+  background-color: #2196F3;
+  color: white;
+}
